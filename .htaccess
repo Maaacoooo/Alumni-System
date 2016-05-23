@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|images|assets|user_guide|uploads|robots\.txt)
+RewriteRule ^(.*)$ /alumnisystem/index.php/$1 [L]
+
+php_flag display_errors 1
